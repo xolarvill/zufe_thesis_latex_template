@@ -15,7 +15,7 @@
 - 页眉、页脚、页码、边距、字体、行距等排版细节完全合规
 - 支持本地 TTF 字体文件（确保跨平台一致性）
 - 参考文献采用 `biblatex + gb7714-2015`，作者-年份引用格式
-- zufe-thesis.cls 已内置 18+ 个排版必需宏包，覆盖页面、字体、图表、参考文献、页眉页脚等全部格式要求。用户只需在 main.tex 中添加学科专用宏包（如 amsmath、algorithm 等）。
+- zufe-thesis.cls 已内置 18+ 个排版必需宏包，覆盖页面、字体、图表、参考文献、页眉页脚等全部格式要求。
 
 ```bash
 ## 📦 文件结构
@@ -36,6 +36,15 @@ zufe-thesis/
 
 - **编译引擎**：`XeLaTeX`（必须）
 - **依赖宏包**：`ctex`, `fontspec`, `xeCJK`, `biblatex`, `biber`, `geometry`, `fancyhdr` 等（TeX Live 2020+ 或 MiKTeX 最新版通常已包含）
+
+如果你是刚上手latex可以查看：
+- [Mac配置教程 - 知乎](https://zhuanlan.zhihu.com/p/560361957)
+- [Windows配置教程 -知乎](https://zhuanlan.zhihu.com/p/12615920279)
+
+有用的辅助网站：
+- [Latex表格生成](https://www.tablesgenerator.com/latex_tables)
+- [Latex符号对应代码](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
+- [Latex大全](https://flowus.cn/latex/share/66110e84-b24a-4cd5-b8a7-2ba2afb35a30)
 
 ### 2. 基本使用步骤
 
@@ -98,5 +107,6 @@ c）其他类似带有支持LaTeX的编译器
 
 ## 参考依据
 - 《浙江财经大学博士、硕士学位论文撰写规定》（2025）
-- GB/T 7714-2005《文后参考文献著录规则》
+- GB/T 7714-2015《文后参考文献著录规则》
 - ctex 宏包文档
+- [浙财本科论文](https://github.com/sqsssq/ZUFE-Thesis)
