@@ -12,8 +12,8 @@
 % \setmainfont[Path=./]{TimesNewRoman.ttf}
 
 % ==================== 额外宏包 ====================
-\usepackage{amsmath, amssymb, amsthm}
-\usepackage{mathrsfs}
+\usepackage{unicode-math} %在此加载你需要的宏包
+\usepackage{lipsum}
 
 % ==================== 参考文献 ====================
 \addbibresource{example.bib} % 请确保 example.bib 存在或替换为你的 .bib 文件
@@ -24,11 +24,12 @@
 \authorName{张三}                % 示例姓名
 \studentID{202300000000}         % 示例学号
 \mentorName{李四}                % 示例导师
-\mentorTitle{教授}
-\majorName{应用经济学}
+\majorName{理论经济学}
 \deptName{经济学院}
 \submitDate{2025年6月}
 \submitDateEN{June 2025}
+\reviewDate{2025年6月} % 盲审日期
+\secrecyLevel{公开} % 论文密级
 
 % ==================== 正文开始 ====================
 \begin{document}
@@ -48,14 +49,14 @@
 
 % 中文摘要
 \begin{abstract}
-本文构建了一个动态最优居住地选择模型，用于分析劳动力迁移决策的内在机制。研究结合微观调查数据，采用计量经济学方法实证检验了收入、家庭结构、区域发展水平等因素对迁移行为的影响。结果表明，个体迁移决策具有显著的动态调整特征，且存在明显的回流倾向。本文的创新之处在于将动态规划方法引入迁移研究，并提出了政策启示。
+\lipsum[1-2]
 
 \keywords{劳动力迁移；动态优化；回流行为；居住地选择}
 \end{abstract}
 
 % 英文摘要（关键词自动转小写）
 \begin{abstracten}
-This paper constructs a dynamic optimal residential location choice model to analyze the internal mechanism of labor migration decisions. Combining micro-survey data and econometric methods, the study empirically examines the impact of income, family structure, and regional development on migration behavior. Results show that individual migration decisions exhibit significant dynamic adjustment characteristics and a clear return tendency. The main contribution lies in integrating dynamic programming into migration research and offering policy implications.
+\lipsum[1-2]
 
 \keywordsen{labor migration; dynamic optimization; return behavior; residential location choice}
 \end{abstracten}
@@ -68,13 +69,13 @@ This paper constructs a dynamic optimal residential location choice model to ana
 
 \chapter{绪论}
 \section{研究背景与意义}
-随着城镇化进程加快，劳动力迁移已成为影响区域协调发展的重要因素。本文旨在……（此处为示例正文，实际写作应详实）。
+\lipsum[3]
 
 \subsection{文献综述}
-国外学者如 \textcite{greenwood1997} 早期研究了迁移的推拉理论；国内研究则多聚焦于……。
+国外学者如 \textcite{greenwood1997} 早期研究……。
 
 \section{研究框架}
-本文共分为五章。第二章构建理论模型，第三章介绍数据与实证策略……
+\lipsum[4]
 
 \chapter{理论模型}
 \section{模型设定}
@@ -83,10 +84,6 @@ This paper constructs a dynamic optimal residential location choice model to ana
 U_t = \ln(C_t) + \theta \cdot V(L_t) - \phi \cdot D(L_t, L_{t-1})
 \end{equation}
 其中 \( C_t \) 为消费，\( L_t \) 为居住地，\( D(\cdot) \) 为迁移成本。
-
-\chapter{实证分析}
-\section{数据来源}
-本文使用中国家庭追踪调查（CFPS）2010–2020年面板数据。
 
 \begin{table}[htbp]
 \centering
@@ -103,15 +100,6 @@ U_t = \ln(C_t) + \theta \cdot V(L_t) - \phi \cdot D(L_t, L_{t-1})
 \end{tabular}
 \end{table}
 
-\section{回归结果}
-基准回归结果见表~\ref{tab:stats}，关键变量在 1\% 水平上显著。
-
-\chapter{结论与政策建议}
-\section{主要结论}
-第一，迁移决策具有路径依赖；第二，收入效应显著但非线性……
-
-\section{政策建议}
-建议完善户籍制度、加强中西部公共服务供给……
 
 % -------------------- 后置部分 --------------------
 \backmatter

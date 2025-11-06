@@ -14,7 +14,7 @@
 - 公式编号 `(2.2)`、图表编号 `图2-1` / `表2-1` 符合规范
 - 页眉、页脚、页码、边距、字体、行距等排版细节完全合规
 - 支持本地 TTF 字体文件（确保跨平台一致性）
-- 参考文献采用 `biblatex + gb7714-2005`，作者-年份引用格式
+- 参考文献采用 `biblatex + gb7714-2015`，作者-年份引用格式
 - zufe-thesis.cls 已内置 18+ 个排版必需宏包，覆盖页面、字体、图表、参考文献、页眉页脚等全部格式要求。用户只需在 main.tex 中添加学科专用宏包（如 amsmath、algorithm 等）。
 
 ```bash
@@ -40,6 +40,7 @@ zufe-thesis/
 ### 2. 基本使用步骤
 
 a）命令行
+
 ```bash
 # 编辑主文档（如 main.tex）
 xelatex main.tex
@@ -49,12 +50,14 @@ xelatex main.tex # 最终生成完整 PDF
 ```
 
 b）SublimeText
+
 首先选择`Tools` $\rightarrow$ `Build with` $\rightarrow$ `LaTeX - Traditional Builder with Xelatex`。
 编写完成之后用`CMD`+`B`编译。
 
 
 c）其他类似带有支持LaTeX的编译器
-确认使用xelatex编译后使用
+
+确认使用xelatex编译后使用。
 
 
 ### 3. 文档类选项
